@@ -1,0 +1,11 @@
+{
+  "name": "hello-webpack",
+  "version": "1.0.0",
+  "description": "Hello world project of webpack.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaixinguo@kaixinguo.site",
+  "license": "ISC"
+}
