@@ -10,3 +10,7 @@
 
 [集成Babel - Babel官网](https://babel.docschina.org/setup#installation)
 
+[配置css-Loader - Webpack英文官网](https://webpack.js.org/loaders/css-loader/#modules)
+
+[CSS modules官方文档](https://github.com/css-modules/css-modules)
+
