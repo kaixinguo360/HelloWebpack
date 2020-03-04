@@ -14,3 +14,15 @@
 
 [CSS modules官方文档](https://github.com/css-modules/css-modules)
 
+[优化选项 - Webpack官网](https://webpack.docschina.org/configuration/optimization/#optimization-minimize)
+
+## 插件
+
+[添加版权声明 - BannerPlugin](https://webpack.docschina.org/plugins/banner-plugin/)
+
+[自动生成HTML - HtmlWebpackPlugin](https://webpack.docschina.org/plugins/html-webpack-plugin/)
+
+[清理生成文件 - CleanWebpackPlugin](https://github.com/johnagan/clean-webpack-plugin)
+
+[分离CSS&JS - MiniCssExtractPlugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)
+
