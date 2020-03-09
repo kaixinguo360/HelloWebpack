@@ -1,4 +1,8 @@
-import hello from './hello.js';
-import config from './config.json';
+import Hello from './hello.js';
+import React from 'react';
+import { render } from 'react-dom';
 
-document.querySelector('#root').appendChild(hello(config.name));
+render(
+    <Hello />,
+    document.getElementById('root')
+);

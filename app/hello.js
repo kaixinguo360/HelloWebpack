@@ -1,9 +1,13 @@
-import style from './hello.css';
+import React, { Component } from 'react';
+import styles from './hello.css';
+import config from './config.json';
 
-export default (name) => {
-  const hello = document.createElement('div');
-  hello.textContent = `Hello, ${name}`;
-  hello.className = style['hello-text'];
-  return hello;
+export default class Hello extends Component {
+  render() {
+    return (
+        <div className={styles['hello-text']}>
+          Hello, {config.name}
+        </div>
+    );
+  }
 }
-

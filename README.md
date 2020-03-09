@@ -16,6 +16,8 @@
 
 [优化选项 - Webpack官网](https://webpack.docschina.org/configuration/optimization/#optimization-minimize)
 
+[React官方文档](https://zh-hans.reactjs.org/docs/getting-started.html)
+
 ## 插件
 
 [添加版权声明 - BannerPlugin](https://webpack.docschina.org/plugins/banner-plugin/)
