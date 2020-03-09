@@ -4,21 +4,31 @@
 
 ## 教程资源
 
+#### Webpack
+
 [核心概念 - Webpack官网](https://www.webpackjs.com/concepts/)
 
 [入门Webpack - 思否](https://segmentfault.com/a/1190000006178770)
 
-[集成Babel - Babel官网](https://babel.docschina.org/setup#installation)
+[优化选项 - Webpack官网](https://webpack.docschina.org/configuration/optimization/#optimization-minimize)
+
+#### Babel
+
+[集成Babel到构建工具 - Babel官网](https://babel.docschina.org/setup#installation)
+
+#### CSS
 
 [配置css-Loader - Webpack英文官网](https://webpack.js.org/loaders/css-loader/#modules)
 
 [CSS modules官方文档](https://github.com/css-modules/css-modules)
 
-[优化选项 - Webpack官网](https://webpack.docschina.org/configuration/optimization/#optimization-minimize)
+#### React
 
 [React官方文档](https://zh-hans.reactjs.org/docs/getting-started.html)
 
 ## 插件
+
+#### Webpack插件
 
 [添加版权声明 - BannerPlugin](https://webpack.docschina.org/plugins/banner-plugin/)
 
@@ -28,3 +38,6 @@
 
 [分离CSS&JS - MiniCssExtractPlugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)
 
+#### Babel插件
+
+[Class Field实验功能 - ClassProperties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
