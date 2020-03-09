@@ -4,7 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './app/main.js',
+  entry: [
+    'react-hot-loader/patch',
+    './app/main.js'
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -32,7 +35,8 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin('Hello, Webpack'),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" })
+    new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 
   devtool: 'eval-source-map',
@@ -40,6 +44,7 @@ module.exports = {
     port: 4200,
     contentBase: './public',
     historyApiFallback: true,
-    inline: true
+    inline: true,
+    hot: true
   }
 };

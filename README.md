@@ -26,6 +26,8 @@
 
 [React官方文档](https://zh-hans.reactjs.org/docs/getting-started.html)
 
+[配置react-hot-loader热加载 - CSDN](https://blog.csdn.net/huangpb123/article/details/78556652)
+
 ## 插件
 
 #### Webpack插件
@@ -41,3 +43,5 @@
 #### Babel插件
 
 [Class Field实验功能 - ClassProperties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
+
+[React热加载 - ReactHotLoader](https://github.com/gaearon/react-hot-loader)
