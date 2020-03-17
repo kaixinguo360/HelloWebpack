@@ -30,6 +30,8 @@
 
 [Vue Loader - Vue官网](https://vue-loader.vuejs.org/zh/)
 
+[Vue 装饰器写法 - 掘金](https://juejin.im/post/5d42a45cf265da03e4673ea2)
+
 ## 插件
 
 #### Webpack插件
@@ -43,3 +45,13 @@
 #### Babel插件
 
 [Class Field实验功能 - ClassProperties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
+
+#### Vue依赖库
+
+Vue装饰器
+
+ - [vue-class-component官方文档](https://class-component.vuejs.org/)
+
+ - [vue-property-decorator官方文档](https://github.com/kaorun343/vue-property-decorator)
+
+ - [vue-property-decorator使用手册 - 掘金](https://juejin.im/post/5d31907a51882557af271be2)
