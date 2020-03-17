@@ -22,6 +22,14 @@
 
 [CSS modules官方文档](https://github.com/css-modules/css-modules)
 
+#### Vue
+
+[介绍 - Vue官网](https://cn.vuejs.org/v2/guide/index.html)
+
+[单文件组件 - Vue官网](https://cn.vuejs.org/v2/guide/single-file-components.html)
+
+[Vue Loader - Vue官网](https://vue-loader.vuejs.org/zh/)
+
 ## 插件
 
 #### Webpack插件

@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: './app/main.js',
@@ -14,23 +15,18 @@ module.exports = {
     rules: [
       { test: /\.txt$/, use: 'raw-loader' },
       { test: /\.m?js$/, exclude: /node_modules/, use: 'babel-loader' },
+      { test: /\.vue$/, loader: 'vue-loader' },
       { test: /\.css$/, use: [
-        { loader: MiniCssExtractPlugin.loader },
-        {
-          loader: 'css-loader',
-          options: {
-            modules: {
-              localIdentName: '[name]_[local]_[hash:base64:5]'
-            }
-          }
-        },
+        { loader: 'style-loader' },
+        { loader: 'css-loader' },
         { loader: 'postcss-loader' }
       ]}
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" })
+    new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" }),
+    new VueLoaderPlugin()
   ],
   optimization: {
     nodeEnv: 'production'

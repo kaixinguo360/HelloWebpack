@@ -1,4 +1,4 @@
-import hello from './hello.js';
-import config from './config.json';
+import Vue from 'vue';
+import HelloComponent from './hello.vue';
 
-document.querySelector('#root').appendChild(hello(config.name));
+new Vue({ render: (h) => h(HelloComponent) }).$mount('#root');
