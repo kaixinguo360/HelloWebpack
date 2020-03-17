@@ -32,3 +32,6 @@
 
 [分离CSS&JS - MiniCssExtractPlugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)
 
+#### Babel插件
+
+[Class Field实验功能 - ClassProperties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
