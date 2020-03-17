@@ -32,6 +32,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" })
   ],
+  resolve: {
+    alias: { 'vue$': 'vue/dist/vue.esm.js' },
+  },
 
   devtool: 'eval-source-map',
   devServer: {
