@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -7,7 +6,7 @@ module.exports = {
   entry: './app/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+    filename: '[name].js'
   },
 
   mode: 'development',
@@ -30,14 +29,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.BannerPlugin('Hello, Webpack'),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" })
   ],
 
   devtool: 'eval-source-map',
   devServer: {
-    host: '0.0.0.0',
     port: 4200,
     contentBase: './public',
     historyApiFallback: true,
