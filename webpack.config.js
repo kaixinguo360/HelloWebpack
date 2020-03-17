@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
-  entry: './app/main.js',
+  entry: './app/main.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -14,7 +14,8 @@ module.exports = {
   module: {
     rules: [
       { test: /\.txt$/, use: 'raw-loader' },
-      { test: /\.m?js$/, exclude: /node_modules/, use: 'babel-loader' },
+      { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' },
+      { test: /\.ts$/, exclude: /node_modules/, loader: 'ts-loader', options: { appendTsSuffixTo: [/\.vue$/] } },
       { test: /\.vue$/, loader: 'vue-loader' },
       { test: /\.css$/, use: [
         { loader: 'style-loader' },
@@ -28,6 +29,9 @@ module.exports = {
     new HtmlWebpackPlugin({ template: __dirname + "/app/index.html" }),
     new VueLoaderPlugin()
   ],
+  resolve: {
+    extensions: [ '.ts', '.js' ]
+  },
 
   devtool: 'eval-source-map',
   devServer: {
